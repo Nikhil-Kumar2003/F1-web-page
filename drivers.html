@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="drivers.css">
+</head>
+<body style="background-color: #f4f4f4;">
+
+    <header>
+        <div class="title-logo">
+            <img src="newlogo.jpeg" alt="F1 Logo" class="logo">
+            <h1>Formula 1</h1>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="test.html">Home</a>
+            <a href="teams.html">Teams</a>
+            <a href="drivers.html">Drivers</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="circuits.html">Circuits</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="f1tv.html">F1 TV</a>
+            <a href="result.php">Result</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+
+    <h1>Drivers</h1>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search for a driver..." onkeyup="searchDriver()">
+        <div id="searchResults" class="suggestions"></div>
+    </div>
+
+    <br>
+    <div class="driver-container">
+        <!-- Example team entry, repeat this block for each team -->
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>1  </span></pre>
+                <span class="driver-name">Max Verstappen</span>
+                <span class="driver-points">393 PTS</span>
+            </div>
+            <div class="team">
+                <span>Red Bull Racing</span>
+            </div>
+            <img src="Max.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>2   </span></pre>
+                <span class="driver-name">Lando Norris</span>
+                <span class="driver-points">331 PTS</span>
+            </div>
+            <div class="team">
+                <span>McLaren</span>
+            </div>
+            <img src="Lando.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>3  </span></pre>
+                <span class="driver-name">Charles Leclerc</span>
+                <span class="driver-points">307 PTS</span>
+            </div>
+            <div class="team">
+                <span>Ferrari</span>
+            </div>
+            <img src="Charles.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>4   </span></pre>
+                <span class="driver-name">Oscar Piastri</span>
+                <span class="driver-points">262 PTS</span>
+            </div>
+            <div class="team">
+                <span>McLaren</span>
+            </div>
+            <img src="Oscar.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>5   </span></pre>
+                <span class="driver-name">Carlos Sainz</span>
+                <span class="driver-points">244 PTS</span>
+            </div>
+            <div class="team">
+                <span>Ferrari</span>
+            </div>
+            <img src="Carlos.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>6   </span></pre>
+                <span class="driver-name">George Russell</span>
+                <span class="driver-points">192 PTS</span>
+            </div>
+            <div class="team">
+                <span>Mercedes</span>
+            </div>
+            <img src="George.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>7   </span></pre>
+                <span class="driver-name">Lewis Hamilton</span>
+                <span class="driver-points">190 PTS</span>
+            </div>
+            <div class="team">
+                <span>Mercedes</span>
+            </div>
+            <img src="Lewis.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>8   </span></pre>
+                <span class="driver-name">Sergio Perez</span>
+                <span class="driver-points">151 PTS</span>
+            </div>
+            <div class="team">
+                <span>Red Bull Racing</span>
+            </div>
+            <img src="Sergio.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>9  </span></pre>
+                <span class="driver-name">Fernando Alonso</span>
+                <span class="driver-points">62 PTS</span>
+            </div>
+            <div class="team">
+                <span>Aston Martin</span>
+            </div>
+            <img src="Fernando.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>10  </span></pre>
+                <span class="driver-name">Nico Hulkenberg</span>
+                <span class="driver-points">31 PTS</span>
+            </div>
+            <div class="team">
+                <span>Haas</span>
+            </div>
+            <img src="Nico.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>11  </span></pre>
+                <span class="driver-name">Yuki Tsunoda</span>
+                <span class="driver-points">28 PTS</span>
+            </div>
+            <div class="team">
+                <span>RB</span>
+            </div>
+            <img src="Yuki.png" alt="Driver img">
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-header">
+                <pre><span>12   </span></pre>
+                <span class="driver-name">Pierre Gasly</span>
+                <span class="driver-points">26 PTS</span>
+            </div>
+            <div class="team">
+                <span>Alpine</span>
+            </div>
+            <img src="Pierre.png" alt="Driver img">
+        </div>
+
+    </div>
+
+    <script>
+        function searchDriver() {
+            const query = document.getElementById("searchBar").value;
+            if (query.length > 0) {
+                const xhr = new XMLHttpRequest();
+                xhr.open("GET", "search_drivers.php?query=" + query, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        document.getElementById("searchResults").innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            } else {
+                document.getElementById("searchResults").innerHTML = "";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+

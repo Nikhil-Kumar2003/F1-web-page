@@ -1,0 +1,156 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+body h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ff0000;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title-logo h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+.logo {
+    border-radius: 8%;
+    width: 60px;
+    height: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff0000;
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+#searchBar {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.suggestions {
+    position: absolute;
+    top: 40px;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.suggestions p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.suggestions p:hover {
+    background-color: #f0f0f0;
+}
+
+/* Driver Cards */
+.driver-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.driver-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+.driver-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.driver-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.driver-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-weight: 900;
+}
+
+.driver-points {
+    color: #555;
+    font-weight: 600;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #666;
+}
+
+.driver-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}

@@ -1,0 +1,124 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 0%;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title-logo h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+.logo {
+    border-radius: 8%;
+    width: 60px;
+    height: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff0000;
+}
+
+body h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #ff0000;
+    margin-top: 20px;
+}
+
+.constructor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.team-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-weight: 900;
+}
+
+.team-points {
+    color: #555;
+    font-weight: 600;
+}
+
+.drivers {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #666;
+}
+
+.team-card img {
+    width: 290px;
+    height: 170px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.last-two {
+    display: flex;
+    justify-content: center;
+}

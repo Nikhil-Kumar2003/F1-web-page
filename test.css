@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Sporty Font', sans-serif; /* Replace with actual sporty font */
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 0%;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo {
+    border-radius: 8%;
+    width: 60px;
+    height: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff0000;
+}
+
+/* Latest News Section */
+.latest-news {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    margin-top: 0%;
+}
+
+.latest-news h2{
+    margin-bottom: 0%;
+}
+
+.news {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.news1, .news2, .news3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex: 1;
+    text-align: center;
+}
+
+.news-image {
+    width: 450px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.news1 p, .news2 p, .news3 p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1e1d1d;
+}
+
+/* Drivers Standing Section */
+.constructor-standings {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin-top: 0;
+    background-color: #dad59d;
+    text-align: center;
+}
+
+.constructors-top3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.constructor img {
+    width: 290px;
+    height: 170px;
+    border-radius: 2%;
+}
+
+.constructor p {
+    margin-top: 15px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* Drivers Standing Section */
+.driver-standings {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin-top: 0;
+    background-color: #968b8b;
+    text-align: center;
+}
+
+.drivers-top3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.driver img {
+    width: 280px;
+    height: 280px;
+    border-radius: 2%;
+}
+
+.driver p {
+    margin-top: 15px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* Sponsors Section */
+.sponsors {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.sponsors-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.sponsors-list p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+

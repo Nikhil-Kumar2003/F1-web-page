@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Schedule</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0d5d5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            margin: 0;
+        }
+
+        /* Header Section */
+        header {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #ff0000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 0%;
+        }
+
+        .title-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .logo {
+            border-radius: 8%;
+            width: 60px;
+            height: auto;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #000000;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff0000;
+        }
+
+        h2 {
+            color: #d11a2a;
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Race Schedule Container */
+        #race-schedule {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Individual Race Container Styling */
+        .race-container {
+            background-color: #ffffff;
+            border-left: 4px solid #d11a2a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .race-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Race Details Styling */
+        .race-name {
+            font-weight: bold;
+            font-size: 20px;
+            color: #d11a2a;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .race-date, .race-location {
+            font-size: 16px;
+            color: #666;
+            margin: 4px 0;
+        }
+
+        /* Icons for Date and Location */
+        .race-date::before {
+            content: "📅 ";
+            margin-right: 4px;
+            color: #333;
+        }
+        .race-location::before {
+            content: "📍 ";
+            margin-right: 4px;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 20px;
+            }
+            .race-container {
+                padding: 10px;
+            }
+            .race-name {
+                font-size: 18px;
+            }
+            .race-date, .race-location {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title-logo">
+            <img src="newlogo.jpeg" alt="F1 Logo" class="logo">
+            <h1>Formula 1</h1>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="test.html">Home</a>
+            <a href="teams.html">Teams</a>
+            <a href="drivers.html">Drivers</a>
+            <a href="raceschedule.html">Schedule</a>
+            <a href="circuits.html">Circuits</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="f1tv.html">F1 TV</a>
+            <a href="result.php">Result</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+<h2>2024 Race Schedule</h2>
+<div id="race-schedule"></div>
+
+<script>
+function loadRaceSchedule() {
+    // Fetch the JSON file
+    fetch("raceschedule.json")
+    .then(response => response.json())
+    .then(data => {
+        const races = data.schedule;
+        let output = "";
+        // Loop through each race and generate HTML
+        races.forEach(race => {
+            output += `<div class="race-container">
+                           <div class="race-name">${race.raceName}</div>
+                           <div class="race-date">${race.date}</div>
+                           <div class="race-location">${race.location}</div>
+                       </div>`;
+        });
+        document.getElementById("race-schedule").innerHTML = output;
+    })
+    .catch(error => console.error('Error fetching race schedule:', error));
+}
+
+// Load race schedule when the page loads
+window.onload = loadRaceSchedule;
+</script>
+
+</body>
+</html>

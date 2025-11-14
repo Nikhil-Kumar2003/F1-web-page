@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Merchandise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #ff0000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 0%;
+        }
+
+        .title-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .title-logo h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #ffffff;
+        }
+
+        .logo {
+            border-radius: 8%;
+            width: 60px;
+            height: auto;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #000000;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff0000;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: #ff0000;
+            margin: 20px 0; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .merch-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 320px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 0 15px; 
+            text-align: center;
+        }
+
+        .merch-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .merch-card img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            margin: 20px 0; 
+        }
+
+        .merch-card h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em; 
+            color: #000000; 
+            margin: 5px 0;
+            font-weight: 600;
+        }
+
+        .buy-btn {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 15px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            display: inline-block;
+        }
+
+        .buy-btn:hover {
+            background-color: #cc0000;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .merch-card {
+                width: 90%; 
+                margin: 10px 0; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title-logo">
+            <img src="newlogo.jpeg" alt="F1 Logo" class="logo">
+            <h1>Formula 1</h1>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="test.html">Home</a>
+            <a href="teams.html">Teams</a>
+            <a href="drivers.html">Drivers</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="circuits.html">Circuits</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="f1tv.html">F1 TV</a>
+            <a href="result.html">Result</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <h1><b>Buy Official F1 Merchandise Now</b></h1>
+
+    <div class="container">
+    
+        <div class="merch-card">
+            <h3><b>Red Bull Racing Max Verstappen Team Polo</b></h3>
+            <br><hr>
+            <img src="merch_redbullpolo.png" alt="Red Bull Racing Max Verstappen Team Polo">
+            <br><hr>
+            <h3>Price: 65 €</h3>
+            <a href="delivery.html" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="merch-card">
+            <h3><b>Mercedes AMG Petronas F1 Cap - White</b></h3>
+            <br><hr><br>
+            <img src="merch_amgcap.png" alt="Mercedes AMG Petronas F1 Cap">
+            <br><hr>
+            <h3>Price: 40 €</h3>
+            <a href="delivery.html" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="merch-card">
+            <h3><b>McLaren Team Lando Norris Driver Polo</b></h3>
+            <br><hr>
+            <img src="merch_mclarenpolo.png" alt="McLaren Team Lando Norris Driver Polo">
+            <br><hr>
+            <h3>Price: 60 €</h3>
+            <a href="delivery.html" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>

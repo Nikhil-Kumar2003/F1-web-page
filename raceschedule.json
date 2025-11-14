@@ -1,0 +1,45 @@
+{
+  "schedule": [
+    {
+      "raceName": "Australian Grand Prix",
+      "date": "2024-03-17",
+      "location": "Melbourne, Australia"
+    },
+    {
+      "raceName": "Bahrain Grand Prix",
+      "date": "2024-03-24",
+      "location": "Sakhir, Bahrain"
+    },
+    {
+      "raceName": "Monaco Grand Prix",
+      "date": "2024-05-26",
+      "location": "Monte Carlo, Monaco"
+    },
+    {
+      "raceName": "British Grand Prix",
+      "date": "2024-07-07",
+      "location": "Silverstone, United Kingdom"
+    },
+    {
+        "raceName": "American Grand Prix",
+        "date": "2024-08-12",
+        "location": "Austin, United States"
+    },
+    {
+      "raceName": "Bahrain Grand Prix",
+      "date": "2024-03-24",
+      "location": "Sakhir, Bahrain"
+    },
+    {
+      "raceName": "Monaco Grand Prix",
+      "date": "2024-05-26",
+      "location": "Monte Carlo, Monaco"
+    },
+    {
+      "raceName": "Australian Grand Prix",
+      "date": "2024-03-17",
+      "location": "Melbourne, Australia"
+    }
+    
+  ]
+}

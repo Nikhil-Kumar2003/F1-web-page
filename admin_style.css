@@ -1,0 +1,96 @@
+/* General body and background styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff0000; /* Red color */
+    padding: 20px;
+    background-color: #FFFFFF; /* White background for the header */
+    margin: 0;
+    border-bottom: 5px solid #E60000; /* Red border at the bottom */
+}
+
+/* Admin Section Styling */
+.admin-section {
+    background-color: #FFFFFF; /* White background for sections */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    border: 2px solid #000000; /* Red border */
+}
+
+h2 {
+    color: #000000; /* Red color for section headers */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    color: #333333; /* Dark color for labels */
+    font-size: 1.1em;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #000000; /* Red border for inputs */
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333333; /* Dark text inside inputs */
+    background-color: #FFFFFF; /* White background for inputs */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Submit Button Styling */
+button {
+    background-color: #E60000; /* Red button */
+    color: white;
+    font-size: 1.2em;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #B50000; /* Darker red on hover */
+}
+
+/* Paragraph Styling */
+p {
+    color: #333333; /* Dark color for text */
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .admin-section {
+        width: 90%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+}
